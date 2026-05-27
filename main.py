@@ -65,12 +65,12 @@ Param_sel.Pa = np.zeros(Pop.N)      # inicializo Probabilidad acumulada
 
 # %% PARÁMETROS PARA CRUZAMIENTO
 Param_cros = Struct()
-Param_cros.Tipo = 2      # 1-un punto, 2-dos puntos, 3-uniforme
+Param_cros.Tipo = 3      # 1-un punto, 2-dos puntos, 3-uniforme
 Param_cros.PC = 0.6      # Probabilidad de cruzamiento
 
 # %% PARÁMETROS PARA MUTACIÓN
 Param_mut = Struct()
-Param_mut.Tipo = 1       # 1-un gen, 2-dos genes, 3-máscara
+Param_mut.Tipo = 2       # 1-un gen, 2-dos genes, 3-máscara
 Param_mut.PM = 0.8       # Probabilidad de mutación
 
 # %% PARÁMETROS PARA REEMPLAZO
