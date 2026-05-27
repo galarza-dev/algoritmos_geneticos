@@ -2,7 +2,7 @@ import numpy as np
 
 def FunObj(cromo_i):
     """
-    # VERSIÓN COMENTADA (Problema de Presupuesto)
+    # (Problema de Presupuesto)
     # presupuesto = 3200
     # C = np.array([100, 120, 90, 80, 110, 130, 140, 150, 100, 120])
     # O = np.array([500, 600, 400, 450, 550, 700, 650, 750, 600, 800])
