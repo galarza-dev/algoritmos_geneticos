@@ -1,19 +1,19 @@
 import numpy as np
 
 def FunObj(cromo_i):
-    """
-    # (Problema de Presupuesto)
-    # presupuesto = 3200
-    # C = np.array([100, 120, 90, 80, 110, 130, 140, 150, 100, 120])
-    # O = np.array([500, 600, 400, 450, 550, 700, 650, 750, 600, 800])
-    # P = np.array([150, 200, 125, 175, 180, 250, 200, 275, 175, 300])
-    # Jfun = np.sum((P * C - O) * cromo_i)
-    # Rfun = np.sum(O * cromo_i)
-    # if Rfun > presupuesto:
-    #     Jfun = 0.1
-    # return Jfun, Rfun
-    """
     
+    # (Problema de Presupuesto)
+    presupuesto = 3200
+    C = np.array([100, 120, 90, 80, 110, 130, 140, 150, 100, 120])
+    O = np.array([500, 600, 400, 450, 550, 700, 650, 750, 600, 800])
+    P = np.array([150, 200, 125, 175, 180, 250, 200, 275, 175, 300])
+    Jfun = np.sum((P * C - O) * cromo_i)
+    Rfun = np.sum(O * cromo_i)
+    if Rfun > presupuesto:
+         Jfun = 0.1
+    return Jfun, Rfun
+    
+    """
     # VERSIÓN ACTIVA (Problema de Energía)
     Emax = 950
     q = np.array([50, 60, 45, 40, 55, 70, 80, 65, 50, 75])
@@ -27,5 +27,5 @@ def FunObj(cromo_i):
     # Castigo duro si viola la restricción de energía máxima
     if Rfun > Emax:
         Jfun = 0.1     
-        
+    """ 
     return Jfun, Rfun
